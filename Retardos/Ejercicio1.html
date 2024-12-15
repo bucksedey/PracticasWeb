@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Un Pixel</title>
+	</head>
+	<body>
+		<canvas id = "pixel" width = "400" height = "200"></canvas>
+		<script>
+			var c = document.getElementById("pixel");
+			var cx = c.getContext("2d");
+			for(let i=0; i<10; i++)
+				cx.arc(100, 100, i++, 0, Math.PI*2); //c.arc(x, y, r,°)
+			cx.fill();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cuadro M&aacute;gico</title>
+</head>
+<body>
+    <script>
+        var n = window.prompt("Introduce el numero: ");
+        
+        var cont = 1;
+
+        document.write("<table border>");
+        
+            for (i = 0; i < n; i++) {
+                document.write("<tr>");
+            for (j = 0; j < n; j++) {
+                document.write("<td>");
+                document.write(cont);
+                cont++;
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>

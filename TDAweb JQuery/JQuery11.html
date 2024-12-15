@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('textarea').keyup(updateCount);
+            $('textarea').keydown(updateCount);
+            function updateCount() {
+                var cs = $(this).val().length;
+                $('#characters').text(cs);
+            }
+        });
+    </script>
+    <title>Ejemplo 11</title>
+</head>
+<body>
+    <textarea></textarea>
+    <div>Caracteres: <span id="characters">0</span></div>
+</body>
+</html>

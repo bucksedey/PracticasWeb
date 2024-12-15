@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#c8").click(function() {
+                $("#noticias").load("/facebook/problemas-simbolos.php");
+            });
+        });
+    </script>
+    <title>Ejemplo 12</title>
+</head>
+<body>
+    <button id="c8">Haz clic en mí para cargar noticias</button>
+    <div id="noticias"></div>
+</body>
+</html>

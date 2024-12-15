@@ -1,0 +1,6 @@
+https://www.geeksforgeeks.org/hashing-in-java/
+
+https://sites.google.com/a/espe.edu.ec/programacion-ii/home/tablas-hash/hashmap-vs-treemap-vs-hashtable-vs-linkedhashmap
+
+https://sites.google.com/a/espe.edu.ec/programacion-ii/home/tablas-hash
+

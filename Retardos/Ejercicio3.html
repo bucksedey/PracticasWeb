@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Retardo 4 segundos con for</title>
+	</head>
+	<body>
+		<script>
+		    for(let p=8; p<12; p++){
+            	mifun(p)
+                }
+                function mifun(p){
+                	setTimeout(function(){
+                		console.log(p);
+                	}, 4000*p);
+                }
+		</script>
+	</body>
+</html>

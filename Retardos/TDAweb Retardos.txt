@@ -1,0 +1,65 @@
+// Ejercicio 1. Pintar un pixel.
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Un Pixel</title>
+	</head>
+	<body>
+		<canvas id = "pixel" width = "400" height = "200"></canvas>
+		<script>
+			var c = document.getElementById("pixel");
+			var cx = c.getContext("2d");
+			for(let i=0; i<10; i++)
+				cx.arc(100, 100, i++, 0, Math.PI*2); //c.arc(x, y, r,°)
+			cx.fill();
+		</script>
+	</body>
+</html>
+
+// Ejercicio 2. Retardo de 3 segs con while().
+let i=0;
+while(i<5){
+	loop(i);
+	i++;
+}
+function loop(i){
+	setTimeout(function(){
+		console.log(i);
+	}, 3000*i)
+}
+
+// Ejercicio 3. Retardo de 4 segs con for().
+for(let p=8; p<12; p++){
+	mifun(p)
+}
+function mifun(p){
+	setTimeout(function(){
+		console.log(p);
+	}, 4000*p);
+}
+
+// Ejercicio 4. Retardo con do-while();
+let i=3;
+do{
+	loop(i);
+	i++;
+}while(i<6);
+function loop(i){
+	setTimeout(function(){
+		console.log(i);
+	}, 4000*i);
+}
+
+// Ejercicio 5. Retardo inicial de 4 segs antes
+// de la 1a. iteración.
+for(let p=8; p<12; p++){
+	mifun(p)
+}
+function mifun(p){
+	setTimeout(function(){
+		console.log(p);
+	}, 4000);
+}
+
+

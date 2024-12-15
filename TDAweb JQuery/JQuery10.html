@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .yellow {
+            background-color: yellow;
+        }
+        .hover {
+            background-color: orange;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".yellow").hover(
+                function() { $(this).addClass("hover"); },
+                function() { $(this).removeClass("hover"); }
+            );
+        });
+    </script>
+    <title>Ejemplo 10</title>
+</head>
+<body>
+    <div class="yellow">Pasa el cursor del mouse sobre este contenido para cambiar su color de fondo.</div>
+</body>
+</html>

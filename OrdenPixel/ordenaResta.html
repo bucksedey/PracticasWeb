@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordenar y Restar N&uacute;meros</title>
+</head>
+<body>
+    <h1>Este Programa muestra la resta de n&uacute;meros de 4 digitos hasta llegar al n&uacute;mero 6174</h1>
+    <script type="text/javascript">
+        function ordenarYRestar(nums) {
+            let asc = nums.slice().sort((a,b) => a-b);
+            let desc = nums.slice().sort((a,b) => b-a);
+            let ascNum = parseInt(asc.join(''));
+            let descNum = parseInt(desc.join(''));
+            let result = descNum - ascNum;
+
+            document.write(`<h3>Números originalmente: ${nums}<br></h3>`);
+            document.write(`<h3>Números ordenados ascendentemente: ${asc}<br></h3>`);
+            document.write(`<h3>Números ordenados descendentemente: ${desc}<br></h3>`);
+            document.write(`<h3>Resta de los números ordenados descendentemente con los números ordenados ascendentemente: ${result}</h3>`);
+
+            return result;
+        }
+        
+        let nums = [];
+        for (let i = 0; i < 4; i++) {
+            nums.push(parseInt(window.prompt("Ingresa un número:")));
+        }
+        
+        let result = ordenarYRestar(nums);
+        let iterations = 1;
+        
+        while (result != 6174) {
+            result = ordenarYRestar(result.toString().split('').map(Number));
+            iterations++;
+        }
+        
+        document.write(`<h3>Número de iteraciones necesarias para llegar al número 6174: ${iterations}</h3>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Número Maravilloso</title>
+</head>
+<body>
+    <input type="number" id="num" placeholder="Ingresa un número">
+    <button onclick="esMaravilloso()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script type="text/javascript">
+        function esMaravilloso() {
+            let num = document.getElementById("num").value;
+            let resultado = document.getElementById("resultado");
+            let n=num;
+            while (num != 1 && num != 4) {
+                let sum = 0;
+                while (num > 0) {
+                    let digito = num % 10;
+                    sum += digito * digito;
+                    num = Math.floor(num / 10);
+                }
+                num = sum;
+            }
+            if (num == 1) {
+                resultado.innerHTML = "El número "+n+" es maravilloso";
+            } else {
+                resultado.innerHTML = "El número "+n+" no es maravilloso";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordenar y Restar N&uacute;meros</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function ordenarYRestar(nums) {
+            let asc = nums.slice().sort((a,b) => a-b);
+            let desc = nums.slice().sort((a,b) => b-a);
+            let ascNum = parseInt(asc.join(''));
+            let descNum = parseInt(desc.join(''));
+            let result = descNum - ascNum;
+
+            document.write(`<h1>Números originalmente: ${nums}<br></h1>`);
+            document.write(`<h1>Números ordenados ascendentemente: ${asc}<br></h1>`);
+            document.write(`<h1>Números ordenados descendentemente: ${desc}<br></h1>`);
+            document.write(`<h1>Resta de los números ordenados descendentemente con los números ordenados ascendentemente: ${result}</h1>`);
+        }
+        
+        let nums = [];
+        for (let i = 0; i < 4; i++) {
+            nums.push(parseInt(window.prompt("Ingresa un número:")));
+        }
+        
+        ordenarYRestar(nums);
+    </script>
+</body>
+</html>

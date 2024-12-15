@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#c10").click(function(){
+            $.get('https://norfipc.com/codigos/jquery-ejemplos-practicos-usar-paginas-web.php', function(data, status){
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+        });
+    </script>
+    <title>Ejemplo 14</title>
+</head>
+<body>
+    <h1>¡Bienvenido a mi página!</h1>
+    <p>Esta es una página de ejemplo que utiliza jQuery para realizar una solicitud GET cuando se hace clic en un botón.</p>
+    <button id="c10">Haz clic aquí</button>
+</body>
+</html>

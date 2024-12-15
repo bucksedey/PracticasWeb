@@ -1,0 +1,96 @@
+body{
+    width: 90%;
+    margin: 1rem auto;
+    font-family: "Verdana", sans-serif;
+    font-size: 12px;
+   }
+h1{
+    margin: 1rem 0;
+    border-bottom: 1px solid #000;
+   }
+.comun{
+    font-size: 5em;
+    text-align: center;
+    padding: 1em 0;
+   }
+.uno{
+    background-color: red;
+   }
+.dos{
+    background-color: yellow;
+   }
+.tres{
+    background-color: green;
+   }
+.cuatro{
+    background-color: blue;
+   }
+.static div{
+    width: 25%;
+    position: static;
+   }
+.relative div{
+    width: 25%;
+    position: relative;
+   }
+.relative div:first-child{
+    left: 1em;
+   }
+.relative div:last-child{
+    left: 2em;
+    bottom: 1em;
+   }
+.absolute{
+ height: 300px;
+}
+.absolute div{
+ width: 25%;
+ position: absolute;
+}
+.absolute div:first-child{
+ left: 0;
+}
+.absolute div:nth-child(2){
+ left: 3em;
+}
+.absolute div:last-child{
+ right: 0;
+}
+.absolute{
+    height: 300px;
+   }
+.absolute div{
+    width: 25%;
+    position: absolute;
+   }
+.absolute div:first-child{
+    left: 0;
+   }
+.absolute div:nth-child(2){
+    left: 3em;
+   }
+.absolute div:last-child{
+    right: 0;
+   }
+.fixed div{
+    width: 10%;
+    position: fixed;
+   }
+.fixed div:nth-child(1){
+    top: 0;
+    left: 0;
+   }
+.fixed div:nth-child(2){
+    top: 0;
+    right: 0;
+   }
+.fixed div:nth-child(3){
+    bottom: 0;
+    left: 0;
+   }
+.fixed div:nth-child(4){
+    bottom: 0;
+    right: 0;
+   }
+     
+   

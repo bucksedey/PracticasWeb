@@ -1,0 +1,4 @@
+p.img:before {
+    content: url(Imagenes/IPNLogo.png) " ";
+    width: 100px;
+}

@@ -1,0 +1,13 @@
+body {
+    counter-reset: capitulo 0;
+    }
+    h2 {
+    font: normal 16px tahoma, verdana, sans-serif;
+    color: #f60;
+    }
+    h2:before {
+    content: "Capitulo " counter(capitulo) " - ";
+    counter-increment: capitulo 1;
+    color: #06f;
+    }
+    

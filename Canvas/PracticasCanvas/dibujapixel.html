@@ -1,0 +1,24 @@
+<!-- Dibujo de una línea punteada. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dibujar un píxel</title>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
+
+  context.strokeStyle = 'black';
+  context.setLineDash([1, 3]); // Esto crea una línea punteada de 1 pixel sólido y 3 pixeles en blanco
+  context.beginPath();
+  context.moveTo(0, 50); // Inicia la línea en la posición x=0, y=50
+  context.lineTo(500, 50); // Dibuja la línea hasta la posición x=500, y=50
+  context.stroke(); // Dibuja la línea
+</script>
+
+</body>
+</html>

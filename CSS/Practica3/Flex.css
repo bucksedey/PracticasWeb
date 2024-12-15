@@ -1,0 +1,76 @@
+/***** COMUNES ******/
+html{ max-width: 1200px; margin: 0 auto;}
+body{ margin: 2rem auto; font-family: "Verdana", sans-serif;}
+h1{ margin-top: 100px;}
+.comun{ font-size: 5rem; text-align: center; padding: 1rem 0;}
+.uno{ background-color: red;}
+.dos{ background-color: yellow;}
+.tres{ background-color: green;}
+.cuatro{ background-color: blue;}
+.cinco{ background-color: orange;}
+.seis{ background-color: purple;}
+.siete{ background-color: pink;}
+.ocho{ background-color: lightgreen;}
+/* FLEX CONTAINER ***************/
+.flex-container{
+ display: flex;
+ flex-direction: row; /* en filas (por defecto). Se puede invertir con row-reverse */
+ flex-wrap: nowrap; /* ajusta el ancho de los elementos si no caben (por defecto) */
+ justify-content: flex-start; /* alinea horizontalmente los elementos al inicio (por 
+defecto) */
+ align-items: flex-start; /* alinea verticalmente los elementos al inicio (por 
+defecto) */
+ align-content: stretch; /* ajusta la altura de los elementos para adaptarse al 
+contenedor (por defecto) */
+}
+.flex-container div{ width: 20%; /* (si puede) */}
+/* FLEX DIRECTION ***************/
+.flex-direction{
+ display: flex;
+ flex-direction: column; /* en columnas. Se puede invertir con column-reverse */
+}
+.flex-direction div{ width: 12.5%;}
+/* FLEX WRAP ***************/
+.flex-wrap{ display: flex; flex-wrap: wrap; }
+.flex-wrap div{ width: 20%;}
+/* FLEX FLOW ***************/
+.flex-flow{ display: flex; flex-flow: row wrap; }
+.flex-flow div{ width: 20%;
+}
+/* JUSTIFY CONTENT ***************/
+.justify-content{ display: flex; flex-wrap: wrap; justify-content: center; }
+.justify-content div{ width: 20%;}
+/* ALIGN ITEMS ***************/
+.align-items{
+ display: flex;
+ height: 400px;
+ padding: 10px;
+ background-color: #CCC;
+ flex-wrap: wrap;
+ align-items: flex-start; /* alinear al centro */
+}
+.align-items div{ width: 20%;}
+/*
+.align-items div:first-child{ font-size: 3rem;}
+*/
+/* ALIGN CONTENT ***************/
+.align-content{
+ display: flex;
+ height: 400px;
+ padding: 10px;
+ background-color: #CCC;
+ flex-wrap: wrap;
+ align-content: center; /* centra verticalmente los elementos */
+}
+.align-content div{ width: 20%;}
+/* CENTRADO PERFECTO ***************/
+.centrado-perfecto{
+ display: flex;
+ height: 400px;
+ padding: 10px;
+ background-color: #CCC;
+ justify-content: center;
+ align-items: center;
+}
+.centrado-perfecto div{ width: 20%;}
+

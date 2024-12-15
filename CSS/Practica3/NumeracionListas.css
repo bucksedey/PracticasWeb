@@ -1,0 +1,28 @@
+.flotante1, .flotante2, .flotante3 {
+    float: left;
+    width: 29%;
+    padding: 1%;
+    border: solid 1px #aaa;
+    margin-left: 1%;
+    list-style: none;
+    }
+    .flotante1 li, .flotante2 li, .flotante3 li {
+    background: #eee;
+    border: solid 1px #fff;
+    padding: 1px 10px;
+    }
+    ol.flotante1 {
+    counter-reset: uno 0;
+     }
+    ol.flotante1 li:after {
+     content: " " counter(uno);
+     counter-increment: uno 1;
+    }
+    ol.flotante2 li:after {
+     content: " " counter(uno);
+     counter-increment: uno 1;
+    }
+    ol.flotante3 li:after {
+     content: " " counter(uno);
+     counter-increment: uno 1;
+    }

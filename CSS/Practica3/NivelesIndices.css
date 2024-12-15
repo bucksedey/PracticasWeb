@@ -1,0 +1,23 @@
+ol.lista {
+    counter-reset: lista 0;
+    list-style: none;
+    clear: both;
+    padding: 10px 30px;
+    }
+ol.lista li {
+    padding: 2px 10px;
+    width: 200px;
+    font: normal 12px tahoma, verdana, sans-serif;
+    color: black;
+    }
+ol.lista ol.lista li {
+    color: blue;
+    }
+ol.lista ol.lista ol.lista li {
+    color: red;
+    }
+ol.lista li:before {
+     content: "Capitulo " counters(lista, '.') " - ";
+     counter-increment: lista 1;
+    }
+    

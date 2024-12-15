@@ -1,0 +1,66 @@
+body{
+    width: 90%;
+    margin: 1rem auto;
+    font-family: "Verdana", sans-serif;
+    font-size: 12px;
+   }
+   h1{
+    margin: 1rem 0;
+    border-bottom: 1px solid #000;
+   }
+   .comun{
+    font-size: 5em;
+    text-align: center;
+    padding: 1em 0;
+   }
+   .uno{
+    background-color: red;
+    }
+    .dos{
+     background-color: yellow;
+    }
+    .tres{
+     background-color: green;
+    }
+    .cuatro{
+     background-color: blue;
+    }
+    /* BLOCK ****************************************/
+    .block div{
+     width: 25%;
+     display: block; }
+    /* INLINE ***************************************/
+    .inline{
+     margin: 110px 0 150px 0; }
+    .inline div{
+     width: 50%;
+     display: inline;
+     padding: 1em; }
+    /* INLINE
+    -BLOCK **************************************/
+    .inline-block div{
+     width: 25%;
+     display: inline-block;
+    }
+    /* FLEX *********************************************/
+    .flex{
+     display: flex; }
+    .flex div{
+     width: 25%; }
+    /* FLOT
+    -LEFT ****************************************/
+    .float-left{
+     height: 250px; }
+    .float-left div{
+     width: 25%;
+     float: left; }
+    /* FLOAT
+    -RIGHT **************************************/
+    .float-right{
+     height: 250px; }
+    .float-right div:first-child{
+     width: 25%;
+     float: left; }
+    .float-right div:last-child{
+     width: 25%;
+     float: right; }
